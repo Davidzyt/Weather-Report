@@ -1,3 +1,5 @@
+//Print Current Time
+
 function printTime() {
 
     const target=document.getElementById("target");
@@ -8,8 +10,12 @@ function printTime() {
 }
 printTime();
 
+//Definite Click Buttons for Current Weather and Future Weather
+
 const runButtonCur=document.getElementById("cur-temp-button");
 const runButtonFur=document.getElementById("future-temp-button");
+
+//Definite API and Fetch API
 
 const  weatherApi = {
     key: "51b10ed5f24ab761bf1170b47ded9904",
@@ -38,6 +44,7 @@ runButtonFur.addEventListener("click",function (){
 
 })
 
+//Function Definite--Show Current Weather Report
 
 function showCurResult(weather) {
 
@@ -65,6 +72,8 @@ function showCurResult(weather) {
     maxTemp.innerHTML = `Maximal Temperature: ${Math.ceil(weather.main.temp_max)}&deg;C;<hr />`
 
 }
+
+//Function Definite--Show Future Reports
 
 function showFurResult(weather) {
 
@@ -111,4 +120,9 @@ function showFurResult(weather) {
 
 }
 
+//Upcoming functions:
+
+//Use the API of https://unsplash.com/ to show a photo of the city they entered in the form.
+
+// Use a graph library like Google Graphs to show a line graph of the temperature over time.
 
