@@ -9,27 +9,27 @@ body {
     font-family: 'Noto Sans JP', sans-serif;
 }
 
+#input-box {
+    border: none;
+    text-align: center;
+    border-radius: 6px;
+    margin: 20px;
+    padding: 5px;
+    width: 172px;
+}
+
 #cur-temp-button {
     border: none;
     text-align: center;
-    border-radius: 20px;
-    margin: 20px;
+    border-radius: 6px;
+    margin: 2px;
     padding: 5px;
 }
 
 #future-temp-button {
     border: none;
     text-align: center;
-    border-radius: 20px;
-    margin: 20px;
+    border-radius: 6px;
+    margin: 2px;
     padding: 5px;
-}
-
-#input-box {
-    border: none;
-    text-align: center;
-    border-radius: 20px;
-    margin: 20px;
-    padding: 5px;
-    width: 172px;
 }
