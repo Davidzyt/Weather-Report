@@ -17,7 +17,7 @@ const runButtonFur=document.getElementById("future-temp-button");
 
 //Definite API and Fetch API
 
-const  weatherApi = {
+const  weaApiInfo = {
     key: "51b10ed5f24ab761bf1170b47ded9904",
     curUrl: "https://api.openweathermap.org/data/2.5/weather?",
     futureUrl:"https://api.openweathermap.org/data/2.5/forecast?",
@@ -27,7 +27,7 @@ runButtonCur.addEventListener("click",function (){
 
    let city=document.getElementById("input-box").value;
 
-    fetch(`${weatherApi.curUrl}q=${city}&appid=${weatherApi.key}&units=metric`)
+    fetch(`${weaApiInfo.curUrl}q=${city}&appid=${weaApiInfo.key}&units=metric`)
         .then(weather => {
             return weather.json();
         }).then(showCurResult);
@@ -37,7 +37,7 @@ runButtonFur.addEventListener("click",function (){
 
     let city=document.getElementById("input-box").value;
 
-    fetch(`${weatherApi.futureUrl}q=${city}&appid=${weatherApi.key}&units=metric`)
+    fetch(`${weaApiInfo.futureUrl}q=${city}&appid=${weaApiInfo.key}&units=metric`)
         .then(weather => {
             return weather.json();
         }).then(showFurResult);
